@@ -2,7 +2,7 @@
   <v-container full-height>
     <v-row>
       <v-col cols="12" class="headline text-center">
-        <span class="tertiary--text ">
+        <span class="tertiary--text">
           Color
         </span>
       </v-col>
