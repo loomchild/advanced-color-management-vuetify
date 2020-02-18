@@ -1,7 +1,7 @@
 {
-  "name": "change-vuetify-font",
+  "name": "advanced-color-management-vuetify",
   "version": "1.0.0",
-  "description": "A project demonstrating how to change fonts in Vuetify.js",
+  "description": "A project demonstrating how to manage colors in Vuetify.js",
   "author": "Jarek Lipski",
   "private": false,
   "scripts": {
