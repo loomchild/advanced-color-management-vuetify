@@ -1,5 +1,12 @@
 <template>
   <v-container full-height>
+    <v-row>
+      <v-col cols="12" class="headline text-center">
+        <span class="tertiary--text ">
+          Color
+        </span>
+      </v-col>
+    </v-row>
     <v-row class="text-center">
       <v-col cols="3">
         <v-sheet color="primary lighten-3 pa-4 ma-3">
