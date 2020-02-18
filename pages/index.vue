@@ -160,7 +160,7 @@ export default {
     swap () {
       this.$vuetify.theme.isDark = !this.$vuetify.theme.isDark
 
-      // necessary to reset colors, perhaps a Vuetify.js bug
+      // necessary to reset colors after changing the theme, perhaps a Vuetify.js bug
       this.touchAll(1)
     }
   }
