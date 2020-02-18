@@ -117,15 +117,21 @@ function lightenDarkenColor (col, amt) {
 }
 
 export default {
+  computed: {
+    theme () {
+      return this.$vuetify.theme.isDark ? 'dark' : 'light'
+    }
+  },
+
   methods: {
     update (color, amount) {
-      const theme = this.$vuetify.theme.themes[this.$vuetify.theme.isDark ? 'dark' : 'light']
+      const theme = this.$vuetify.theme.themes[this.theme]
       const currentColor = theme[color]
       if (currentColor == null) {
         return
       }
       if (typeof currentColor === 'object') {
-        Object.entries(currentColor).map(([key, value]) => {
+        Object.entries(currentColor).forEach(([key, value]) => {
           currentColor[key] = lightenDarkenColor(value, amount)
         })
       } else {
@@ -135,6 +141,12 @@ export default {
 
     updateAll (amount) {
       ['primary', 'secondary', 'tertiary', 'accent'].forEach(color => this.update(color, amount))
+    },
+
+    touchAll () {
+      const value = this.$vuetify.theme.themes[this.theme]
+      this.$vuetify.theme.themes[this.theme] = {}
+      this.$vuetify.theme.themes[this.theme] = value
     },
 
     lighten () {
@@ -147,6 +159,9 @@ export default {
 
     swap () {
       this.$vuetify.theme.isDark = !this.$vuetify.theme.isDark
+
+      // necessary to reset colors, perhaps a Vuetify.js bug
+      this.touchAll(1)
     }
   }
 }
