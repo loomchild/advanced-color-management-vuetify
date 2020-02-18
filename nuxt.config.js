@@ -35,6 +35,7 @@ export default {
         dark: {
           primary: '#4caf50',
           secondary: '#ff8c00',
+          tertiary: '#4682bf',
           accent: '#9c27b0'
         }
       }

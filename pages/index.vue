@@ -12,6 +12,11 @@
         </v-sheet>
       </v-col>
       <v-col cols="auto">
+        <v-sheet width="100" height="60" color="tertiary text-center white--text pa-1">
+          Tertiary
+        </v-sheet>
+      </v-col>
+      <v-col cols="auto">
         <v-sheet width="100" height="60" color="accent text-center white--text pa-1">
           Accent
         </v-sheet>
