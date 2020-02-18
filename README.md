@@ -1,6 +1,6 @@
-# change-vuetify-font
+# advanced-color-management-vuetify
 
-> A project demonstrating how to change fonts in Vuetify.js with Nuxt.js
+> A project demonstrating how to manage colors in Vuetify.js and Nuxt.js
 
 ## Build Setup
 
