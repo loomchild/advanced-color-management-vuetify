@@ -2,7 +2,7 @@
 
 > A project demonstrating how to manage colors in Vuetify.js and Nuxt.js
 
-See my related article on [Medium](https://medium.com/untitled-factory/advanced-color-management-in-vuetify-js-with-nuxt-js-6e20d26e37c6).
+See my related article on [Medium](https://medium.com/@jareklipski/advanced-color-management-in-vuetify-js-with-nuxt-js-6e20d26e37c6).
 
 ## Build Setup
 
